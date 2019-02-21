@@ -9,7 +9,7 @@ public class BarbarianTest {
 
     @Before
     public void before(){
-        sword = new Weapon("Excalibur");
+        sword = new Weapon("Excalibur", 15,10);
         conan = new Barbarian("Conan Doyle", sword);
     }
 
@@ -42,7 +42,7 @@ public class BarbarianTest {
 
     @Test
     public void canSetWeapon(){
-        Weapon spoon = new Weapon("Timothy");
+        Weapon spoon = new Weapon("Timothy", 1,1);
         conan.setWeapon(spoon);
         assertEquals(spoon, conan.getWeapon());
     }

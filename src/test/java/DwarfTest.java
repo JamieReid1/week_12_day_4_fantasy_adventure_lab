@@ -11,7 +11,7 @@ public class DwarfTest {
     @Before
     public void before(){
 
-        axe = new Weapon("Axe");
+        axe = new Weapon("Axe", 10, 5);
         gimily = new Dwarf("Gimily", axe);
 
     }
@@ -45,7 +45,7 @@ public class DwarfTest {
 
     @Test
     public void canSetWeapon(){
-        Weapon hammer = new Weapon("Hammer");
+        Weapon hammer = new Weapon("Hammer", 12,4);
         gimily.setWeapon(hammer);
         assertEquals(hammer, gimily.getWeapon());
     }
