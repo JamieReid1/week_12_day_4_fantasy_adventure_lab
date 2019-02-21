@@ -3,7 +3,7 @@ public abstract class Player {
     private String name;
     private int health;
 
-    public Player(String name, int health){
+    public Player(String name){
         this.name = name;
         this.health = 100;
     }

@@ -2,8 +2,8 @@ public abstract class Fighter extends Player {
 
     private Weapon weapon;
 
-    public Fighter(String name, int health, Weapon weapon) {
-        super(name, health);
+    public Fighter(String name, Weapon weapon) {
+        super(name);
         this.weapon= weapon;
     }
 
