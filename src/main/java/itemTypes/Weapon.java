@@ -1,3 +1,5 @@
+package itemTypes;
+
 public class Weapon {
 
     private String type;

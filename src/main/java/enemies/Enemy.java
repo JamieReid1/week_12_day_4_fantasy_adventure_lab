@@ -1,4 +1,8 @@
-public abstract class Enemy {
+package enemies;
+
+import interfaces.ICharacter;
+
+public abstract class Enemy implements ICharacter {
 
     String name;
     int health;
@@ -23,4 +27,9 @@ public abstract class Enemy {
     public void setHealth(int health) {
         this.health = health;
     }
+
+    public void isAttacked(int damage){
+        this.health -= damage;
+    }
+
 }

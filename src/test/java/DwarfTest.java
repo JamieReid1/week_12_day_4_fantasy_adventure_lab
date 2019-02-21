@@ -1,3 +1,5 @@
+import itemTypes.Weapon;
+import players.Dwarf;
 import org.junit.Before;
 import org.junit.Test;
 

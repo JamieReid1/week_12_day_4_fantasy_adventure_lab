@@ -1,4 +1,8 @@
-public abstract class Player {
+package players;
+
+import interfaces.ICharacter;
+
+public abstract class Player implements ICharacter {
 
     private String name;
     private int health;
@@ -22,5 +26,9 @@ public abstract class Player {
 
     public void setHealth(int health) {
         this.health = health;
+    }
+
+    public void isAttacked(int damage){
+        this.health -= damage;
     }
 }

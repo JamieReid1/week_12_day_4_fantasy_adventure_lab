@@ -1,4 +1,10 @@
-public class Orc extends Enemy {
+package enemies;
+
+import interfaces.ICharacter;
+import interfaces.IWeapon;
+import itemTypes.Weapon;
+
+public class Orc extends Enemy implements IWeapon {
 
     private Weapon weapon;
 
@@ -15,4 +21,8 @@ public class Orc extends Enemy {
         this.weapon = weapon;
     }
 
+    public void attack(ICharacter character){
+        int damage = this.weapon.getDamage();
+        character.isAttacked(damage);
+    }
 }
